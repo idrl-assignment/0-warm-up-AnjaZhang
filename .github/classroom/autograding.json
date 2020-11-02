@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "generate_matrix() 测试",
+      "setup": "sudo -H python3 -m pip install --upgrade pip setuptools wheel && sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -k test_generate_matrix",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "save_matrix() 测试",
+      "setup": "sudo -H python3 -m pip install --upgrade pip setuptools wheel && sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -k test_save_matrix",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "代码规范",
+      "setup": "sudo -H pip3 install flake8",
+      "run": "flake8 . --count --show-source --statistics",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}
