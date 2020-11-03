@@ -1,4 +1,4 @@
 pytest
 # TODO: add additional package
 numpy
-PIL
+pillow
