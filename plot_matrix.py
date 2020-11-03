@@ -1,13 +1,22 @@
 # TODO: import ...
+import numpy as np
+from PIL import Image
 
 
 def generate_random_matrix(m, n):
-    raise NotImplementedError  # TODO: 删除该行，实现该函数功能
-
+    random_matrix = np.random.rand(m,n)
+    for i in range(m):
+        for j in range(n):
+            if random_matrix[i, j] >= 0.5:
+                random_matrix[i, j] = 1
+            else:
+                random_matrix[i, j] = 0
+    return random_matrix
 
 def save_matrix(matrix, file_name):
-    raise NotImplementedError  # TODO: 删除该行，实现该函数功能
-
+    im = Image.fromarray(matrix.astype('uint8')) # 生成 
+    im.save(file_name) # 保存
+    return None
 
 if __name__ == "__main__":
     matrix = generate_random_matrix(10, 10)

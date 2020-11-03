@@ -1,2 +1,4 @@
 pytest
 # TODO: add additional package
+numpy
+PIL >= 1.1.7
